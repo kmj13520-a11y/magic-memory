@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+/* 카드 앞면 돌리기 */
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+}
+/* 카드 뒷면 돌리기 */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
